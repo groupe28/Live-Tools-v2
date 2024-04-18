@@ -24,52 +24,59 @@ async def main():
     params = {
         "BTC/USDT": {
             "src": "close",
-            "ma_base_window": 7,
-            "envelopes": [0.07, 0.1, 0.15],
+            "ma_base_window": 5,
+            "envelopes": [0.05, 0.07, 0.1],
             "size": 0.1,
             "sides": ["long", "short"],
+            "leverage": 6,
         },
         "ETH/USDT": {
             "src": "close",
             "ma_base_window": 5,
-            "envelopes": [0.07, 0.1, 0.15],
+            "envelopes": [0.05, 0.07, 0.1],
             "size": 0.1,
             "sides": ["long", "short"],
+            "leverage": 2,
         },
         "ADA/USDT": {
             "src": "close",
-            "ma_base_window": 5,
-            "envelopes": [0.07, 0.09, 0.12, 0.15],
+            "ma_base_window": 20,
+            "envelopes": [0.05, 0.07, 0.1, 0.15],
             "size": 0.1,
             "sides": ["long", "short"],
+            "leverage": 2,
         },
         "AVAX/USDT": {
             "src": "close",
             "ma_base_window": 5,
-            "envelopes": [0.07, 0.09, 0.12, 0.15],
+            "envelopes": [0.05, 0.07, 0.1, 0.15],
             "size": 0.1,
             "sides": ["long", "short"],
+            "leverage": 6
         },
         "EGLD/USDT": {
             "src": "close",
             "ma_base_window": 5,
-            "envelopes": [0.07, 0.1, 0.15, 0.2],
+            "envelopes": [0.03, 0.05, 0.1, 0.15],
             "size": 0.05,
             "sides": ["long", "short"],
+            "leverage": 6,
         },
         "KSM/USDT": {
             "src": "close",
             "ma_base_window": 5,
-            "envelopes": [0.07, 0.1, 0.15, 0.2],
+            "envelopes": [0.03, 0.05, 0.1, 0.15],
             "size": 0.05,
             "sides": ["long", "short"],
+            "leverage": 2,
         },
         "OCEAN/USDT": {
             "src": "close",
             "ma_base_window": 5,
-            "envelopes": [0.07, 0.1, 0.15, 0.2],
+            "envelopes": [0.05, 0.07, 0.1, 0.15],
             "size": 0.05,
             "sides": ["long", "short"],
+            "leverage": 6,
         },
         "REN/USDT": {
             "src": "close",
@@ -80,73 +87,83 @@ async def main():
         },
         "ACH/USDT": {
             "src": "close",
-            "ma_base_window": 5,
-            "envelopes": [0.07, 0.1, 0.15, 0.2],
+            "ma_base_window": 15,
+            "envelopes": [0.05, 0.07, 0.1, 0.15],
             "size": 0.05,
             "sides": ["long", "short"],
+            "leverage": 6,
         },
         "APE/USDT": {
             "src": "close",
-            "ma_base_window": 5,
-            "envelopes": [0.07, 0.1, 0.15, 0.2],
+            "ma_base_window": 10,
+            "envelopes": [0.03, 0.05, 0.1, 0.15],
             "size": 0.05,
             "sides": ["long", "short"],
+            "leverage": 2,
         },
         "CRV/USDT": {
             "src": "close",
-            "ma_base_window": 5,
-            "envelopes": [0.07, 0.1, 0.15, 0.2],
+            "ma_base_window": 20,
+            "envelopes": [0.05, 0.07, 0.1, 0.15],
             "size": 0.05,
             "sides": ["long", "short"],
+            "leverage": 2,
         },
         "DOGE/USDT": {
             "src": "close",
             "ma_base_window": 5,
-            "envelopes": [0.07, 0.1, 0.15, 0.2],
+            "envelopes": [0.03, 0.05, 0.1, 0.15],
             "size": 0.05,
             "sides": ["long", "short"],
+            "leverage": 2,
         },
         "ENJ/USDT": {
             "src": "close",
-            "ma_base_window": 5,
-            "envelopes": [0.07, 0.1, 0.15, 0.2],
+            "ma_base_window": 20,
+            "envelopes": [0.05, 0.07, 0.1, 0.15],
             "size": 0.05,
             "sides": ["long", "short"],
+            "leverage": 2,
         },
         "FET/USDT": {
             "src": "close",
             "ma_base_window": 5,
-            "envelopes": [0.07, 0.1, 0.15, 0.2],
+            "envelopes": [0.05, 0.07, 0.1, 0.15],
             "size": 0.05,
             "sides": ["long", "short"],
+            "leverage": 2,
         },
         "ICP/USDT": {
             "src": "close",
             "ma_base_window": 5,
-            "envelopes": [0.07, 0.1, 0.15, 0.2],
+            "envelopes": [0.05, 0.07, 0.1, 0.15],
             "size": 0.05,
             "sides": ["long", "short"],
+            "leverage": 2,
         },
         "IMX/USDT": {
             "src": "close",
             "ma_base_window": 5,
-            "envelopes": [0.07, 0.1, 0.15, 0.2],
+            "envelopes": [0.05, 0.07, 0.1, 0.15],
             "size": 0.05,
             "sides": ["long", "short"],
+            "leverage": 2,
         },
         "LDO/USDT": {
             "src": "close",
             "ma_base_window": 5,
-            "envelopes": [0.07, 0.1, 0.15, 0.2],
+            "envelopes": [0.05, 0.07, 0.1, 0.15],
             "size": 0.05,
             "sides": ["long", "short"],
+            "leverage": 2,
         },
         "MAGIC/USDT": {
             "src": "close",
-            "ma_base_window": 5,
-            "envelopes": [0.07, 0.1, 0.15, 0.2],
+            "ma_base_window": 15,
+            "envelopes": [0.05, 0.07, 0.1, 0.15],
             "size": 0.05,
             "sides": ["long", "short"],
+            "leverage": 6,
         },
         "REEF/USDT": {
             "src": "close",
@@ -154,27 +171,31 @@ async def main():
             "envelopes": [0.07, 0.1, 0.15, 0.2],
             "size": 0.05,
             "sides": ["long", "short"],
+            "leverage": 2,
         },
         "SAND/USDT": {
             "src": "close",
-            "ma_base_window": 5,
-            "envelopes": [0.07, 0.1, 0.15, 0.2],
+            "ma_base_window": 15,
+            "envelopes": [0.05, 0.07, 0.1, 0.15],
             "size": 0.05,
             "sides": ["long", "short"],
+            "leverage": 2,
         },
         "TRX/USDT": {
             "src": "close",
-            "ma_base_window": 5,
-            "envelopes": [0.07, 0.1, 0.15, 0.2],
+            "ma_base_window": 10,
+            "envelopes": [0.05, 0.07, 0.1, 0.15],
             "size": 0.05,
             "sides": ["long", "short"],
+            "leverage": 2,
         },
         "XTZ/USDT": {
             "src": "close",
             "ma_base_window": 5,
-            "envelopes": [0.07, 0.1, 0.15, 0.2],
+            "envelopes": [0.05, 0.07, 0.1, 0.15],
             "size": 0.05,
             "sides": ["long", "short"],
+            "leverage": 2,
         },
     }
 
@@ -200,11 +221,11 @@ async def main():
 
         try:
             print(
-                f"Setting {margin_mode} x{exchange_leverage} on {len(pairs)} pairs..."
+                f"Setting {margin_mode} x{params[pair]['leverage'] } on {len(pairs)} pairs..."
             )
             tasks = [
                 exchange.set_margin_mode_and_leverage(
-                    pair, margin_mode, exchange_leverage
+                    pair, margin_mode, params[pair]['leverage']
                 )
                 for pair in pairs
             ]
